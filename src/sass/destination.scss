@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&family=Poppins:wght@100&family=Roboto+Mono:ital,wght@1,200&display=swap" );
+
+
+body {
+    background-color: url("../assets/img/Mask");
+    background-size: cover; /* Esto asegura que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  }
+.container{
+    position: relative;
+    width: 375px;
+    height: 850px;
+    @media (min-width: 1115px) {
+      position: relative;
+      width: 1440px;
+      height: 900px;
+    }
+}
+.header{
+    position: absolute;
+  }
+.path {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 24px;
+    left: 24px;
+  }
+.menu_hamburguesa {
+    position: absolute;
+    width: 24px;
+    height: 21px;
+    top: 33px;
+    left: 327px;
+    @media (min-width: 1115px) {
+      position: absolute;
+      display: none;
+    }
+  }
+
+.moon{
+    position:absolute;
+    width: 221px;
+    height: 19px;
+    top: 88px;
+    left: 77.5px;
+    padding: 0px, 4px, 0px, 0px;
+       
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 2.700000047683716px;
+    text-align: left;
+    color: #FFFFFF;
+    @media (min-width: 1115px) {
+        position: absolute;
+        width: 322px;
+        height: 34px;
+        left: 54px;
+        font-family: Barlow Condensed;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 34px;
+        letter-spacing: 4.724999904632568px;
+        text-align: left;
+        color: #FFFFFF;
+    }
+}
+
+.destination{
+    position:absolute;
+    width: 170px;
+    height: 170px;
+    top: 139px;
+    left: 103px;
+    @media (min-width: 1115px) {
+        position:absolute;
+        width: 445px;
+        height: 440px;
+        top: 310px;
+        left: 200px;
+    }
+       
+}
+
+.container_navegation{
+    @media (min-width: 1115px) {
+        position:absolute;
+        width: 445px;
+        height: 472px;
+        top: 310px;
+        left: 832px;    
+    }
+} 
+.navbar-nav{
+    position:absolute;
+    width: 237.5px;
+    height: 28px;
+    top: 335px;
+    left: 69px;
+    color:white;
+@media (min-width: 1115px) {
+    position:absolute;
+    width: 285.5px;
+    height: 34px;
+}
+}
+.nav-items{
+    
+}
+
+.title_moon{
+    position: absolute;
+    width: 187px;
+    height: 64px;
+    top: 383px;
+    left: 94.5px;
+    font-family: Bellefair;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFFFFF;
+    @media (min-width: 1115px) {
+        position:absolute;
+        width: 333px;
+        height: 115px;
+        top: 71px;
+        left: 0.5px;
+        font-family: Bellefair;
+        font-size: 100px;
+        font-weight: 400;
+        line-height: 115px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+}
+.paragraph_planet{
+    position:absolute;
+    width: 327px;
+    height: 125px;
+    top: 448px;
+    left: 24px;
+    font-family: Barlow;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #D0D6F9;
+    @media (min-width: 1115px) {
+        position:absolute;
+        width: 444px;
+        height: 128px;
+        top: 200px;
+        font-family: Barlow;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #D0D6F9;
+    }
+}
+.linea_recta{
+    position:absolute;
+    width: 327px;
+    height: 1px;
+    top: 605px;
+    left: 24px;
+    background: #383B4B;
+    @media (min-width: 1115px) {
+        position:absolute;
+        width: 444px;
+        height: 1px;
+        top: 382px;
+        left: 1px;
+        background: #383B4B;
+
+    }        
+
+}
