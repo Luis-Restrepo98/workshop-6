@@ -1,13 +1,11 @@
-import Personajes from '../components/Personajes';
-import Personaje2 from "../components/Personaje2";
-import Personaje3 from "../components/personaje3";
-import Personaje4 from "../components/personaje4";
+import LaunchVehicle from './LaunchVehicle';
+import Spaceport from "./Spaceport";
+import Capsule from "./Capsule";
 
 export const Carrusel = [
-  <Personajes key="Personajes" />,
-  <Personaje2 key="Personaje2" />,
-  <Personaje3 key="Personaje3" />,
-  <Personaje4 key="Personaje4" />,
+  <LaunchVehicle key="LauchVehicle" />,
+  <Spaceport key="Spaceport" />,
+  <Capsule key="Capsule" />,
 ];
 
 export default Carrusel;
