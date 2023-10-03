@@ -1,22 +1,13 @@
+import PersonajeMoon from './PersonajeMoon';
+import Mars from "./Mars";
+import Europa from "./Europa";
+import Titan from "./Titan";
 
-/* import{BrowserRouter, Link} from 'react-router-dom';
+export const Navegation = [
+  <PersonajeMoon key="Moon" />,
+  <Mars key="Mars" />,
+  <Europa key="Europa" />,
+  <Titan key="Titan" />,
+];
 
-const navbar =() =>{
-    return(
-        <BrowserRouter>
-        <div className='navbar-destination'>
-            <ul className='navbar-nav'>
-                <li className='nav-items'>
-                    <Link className="nav-link" to="/personajemoon"> MOONS
-                    </Link>
-                </li>
-                <li className='nav-items'>
-                    <Link className="nav-link" to="/mars"> MARS
-                    </Link>
-                </li>
-            </ul>
-        </div>
-        </BrowserRouter>
-    )
-}
-export default navbar */
+export default Navegation;
