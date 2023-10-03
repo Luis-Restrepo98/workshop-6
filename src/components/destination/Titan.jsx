@@ -1,6 +1,4 @@
 import '../../sass/destination.scss'; 
-import pathMobile from '../../assets/icons/path.png';
-import menuHamburguesa from "../../assets/icons/group.png";
 import destinationTitan from "../../assets/img/titan.png";
 import lineaRectangular from "../../assets/icons/Rectangle.png";
 import{BrowserRouter, Link} from 'react-router-dom';
@@ -10,10 +8,6 @@ const DestinationTitan = () => {
     return (
       <>
           <main className='container'>
-              <header className='header'>
-                  <div><img src={pathMobile} className='path' alt="path" /></div>
-                  <div><img src={menuHamburguesa} className='menu_hamburguesa' alt="menu_hamburguesa" /></div>
-              </header>
                 <div className="container-moon">
                     <p className="num">01 </p>
                     <h1 className='moon'>PICK YOUR DESTINATION</h1>
