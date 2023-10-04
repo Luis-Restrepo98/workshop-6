@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed&family=Courgette&family=Epilogue:wght@500;700&family=Josefin+Sans:wght@300&family=Quicksand&family=Space+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed&family=Bellefair&family=Courgette&family=Epilogue:wght@500;700&family=Josefin+Sans:wght@300&family=Quicksand&family=Space+Grotesk&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: "border-box";
+}
+.vehiclesBody {
+  
+    height: 833px;
+    top: -3022px;
+    left: 1744px; 
+    background-image: url("../assets/img/Space-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .vehiclesHeader {
+    height: 8rem;
+  }
+  
+  .vehiclesTitle {
+    width:300px;
+    margin-left:250px;
+    top: 212px;
+    left: 166.5px;
+    padding: 0px, 7px, 0px, 0px;
+    color:white;
+    margin-top:30px;
+    
+
+  }
+  .vehiclesTitleText{
+    width: 300px;
+    height: 34px;
+    left: 54px;
+    font-family: Barlow Condensed;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 4.724999904632568px;
+  }
+  
+  
+  .vehiclesDescription{
+      display: flex;
+      flex-direction: column;
+      text-align:start;
+      width: 40%;
+      color: white;
+      margin-top:110px;
+      left: 325px;
+      gap:10px;
+
+  }
+  .title{
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 2.700000047683716px;
+    text-align: left;
+
+  }
+  .titleLaunch{
+    top: 30px;
+    font-family: Bellefair;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0px;
+    text-align: left;
+
+
+  }
+  .paragraph{
+    width:400px;
+    top: 50px; 
+    font-family: Barlow;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+
+
+  }
+  
+
+  
+  .vehiclesContainerButtons{
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:center;
+      gap:5%;
+
+    
+  }
+  .buttonVehiclesActiv{
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    font-family:Bellefair;
+    font-size: 40px;
+
+  }
+  .buttonVehiclesInactiv{
+    background-color:transparent;
+    border: 1px solid white;
+    color:white;
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    font-family:Bellefair;
+    font-size: 40px;
+  }
+  .vehiclesContanerInfo{
+      display: flex;
+  }
+  
+  .vehiclesImages{
+    width: 35%;
+    padding-bottom:25px;
+    display:flex;
+    justify-content:end;
+
+  }
