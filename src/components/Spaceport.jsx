@@ -1,16 +1,10 @@
 import React from 'react';
 import '../sass/personajes.scss';
-import pathMobile from '../assets/icons/path.png';
-import menuHamburguesa from "../assets/icons/group.png"
 
 const Spaceport = () => {
   return (
     <>
         <main className='container__principal'>
-            <header className='header__container'>
-                <div><img src={pathMobile} className='path_mobile' alt="path_mobile" /></div>
-                <div><img src={menuHamburguesa} className='menu_hamburguesa' alt="menu_hamburguesa" /></div>
-            </header>
             <h1 className='title__primer__personaje'>SPACE LAUNCH 101</h1>
             <div className='container__image2'>
             </div>
