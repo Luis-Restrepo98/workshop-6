@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed&family=Courgette&family=Epilogue:wght@500;700&family=Josefin+Sans:wght@300&family=Quicksand&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed&family=Bellefair&family=Courgette&family=Epilogue:wght@500;700&family=Josefin+Sans:wght@300&family=Quicksand&family=Space+Grotesk&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 'border-box';
+  }
+  body {
+    background-image: url('../assets/img/Bitmap-fondo.png');
+    background-size: cover; /* Esto asegura que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  }
+  
+.container__principal{
+    position: relative;
+    width: 375px;
+    height: 710px;
+  }
+.header__container{
+    position: absolute
+}
+.path_mobile{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 24px;
+    left: 24px;
+}
+.menu_hamburguesa{
+    position: absolute;
+    width: 24px;
+    height: 21px;
+    top: 33px;
+    left: 327px;
+}
+.title__primer__personaje{
+    position: absolute;
+    width: 166px;
+    height: 19px;
+    top: 88px;
+    left: 135px;
+    padding: 0px, 2px, 0px, 0px;
+
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 2.700000047683716px;
+    text-align: left;
+    color:#FFFFFF;
+}
+.container__image{
+    position: absolute;
+    width: 327px;
+    height: 223px;
+    top: 20px;
+    left: 24px;
+}
+.linea__rectangular{
+    position: absolute;
+    width: 327px;
+    height: 1px;
+    top: 361px;
+    left: 24px;
+    color: #383B4B;
+}
+.personaje__principal{
+    position: absolute;
+    width: 177.12px;
+    height: 222px;
+    top: 139px;
+    left: 98.62px;
+}
+.container__carrusel{
+    position: absolute;
+    width: 327px;
+    height: 212px;
+    top: 394px;
+    left: 24px;
+}
+.carrusel{
+    position: absolute;
+    width: 88px;
+    height: 10px;
+    top: 20px;
+    left: 130px;
+}
+.container__paragraph{
+    position: absolute;
+    width: 327px;
+    height: 170px;
+    top: 56px;
+    left: 14px;
+}
+.container__title{
+    position: absolute;
+    width: 327px;
+    height: 54px;
+}
+.title__Commander {
+    position: absolute;
+    width: 107px;
+    height: 18px;
+    left: 110px;
+    opacity: 
+    49.51%;
+    
+    font-family: Bellefair;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.title__douglas{
+    position: absolute;
+    width: 327px;
+    height: 28px;
+    top: 26px;
+
+    font-family: Bellefair;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.paragraph__douglas{
+    position: absolute;
+    width: 327px;
+    height: 100px;
+    top: 70px;
+
+    font-family: Barlow;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    color: #D0D6F9;
+}
