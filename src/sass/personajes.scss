@@ -1,105 +1,89 @@
-@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed&family=Courgette&family=Epilogue:wght@500;700&family=Josefin+Sans:wght@300&family=Quicksand&family=Space+Grotesk&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed&family=Bellefair&family=Courgette&family=Epilogue:wght@500;700&family=Josefin+Sans:wght@300&family=Quicksand&family=Space+Grotesk&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed&family=Courgette&family=Epilogue:wght@500;700&family=Josefin+Sans:wght@300&family=Quicksand&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed&family=Bellefair&family=Courgette&family=Epilogue:wght@500;700&family=Josefin+Sans:wght@300&family=Quicksand&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow&family=Barlow+Condensed&family=Bellefair&family=Courgette&family=Epilogue:wght@500;700&family=Josefin+Sans:wght@300&family=Quicksand&family=Space+Grotesk&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: "border-box";
-}
-body {
-  background-image: url("../assets/img/Bitmap-fondo.png");
-  background-size: cover; /* Esto asegura que la imagen cubra toda la pantalla */
-  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  box-sizing: 'border-box';
 }
 
-.container__principal {
+$desktop-breakpoint: 1115px;
+
+.mainContainer {
   position: relative;
+  // margin: auto;
   width: 375px;
   height: 710px;
-  @media (min-width: 1115px) {
+  background-image: url('../assets/img/fondo-mobile-personajes.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-width: $desktop-breakpoint) {
     position: relative;
     width: 1440px;
     height: 900px;
+    background-image: url('../assets/img/fondo-desktop-personajes.png');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
-.header__container {
+.mainTitle {
   position: absolute;
-}
-.path_mobile {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 24px;
-  left: 24px;
-}
-.menu_hamburguesa {
-  position: absolute;
-  width: 24px;
-  height: 21px;
-  top: 33px;
-  left: 327px;
-  @media (min-width: 1115px) {
-    position: absolute;
-    display: none;
-  }
-}
-.title__primer__personaje {
-  position: absolute;
+  text-transform: uppercase;
+  font-family: Barlow Condensed;
+  font-weight: 400;
+  color: white;
+
   width: 166px;
   height: 19px;
   top: 88px;
-  left: 135px;
-  padding: 0px, 2px, 0px, 0px;
-
-  font-family: Barlow Condensed;
+  left: 105px;
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
-  letter-spacing: 2.700000047683716px;
+  letter-spacing: 2.7px;
   text-align: left;
-  color: #ffffff;
-  @media (min-width: 1115px) {
+
+  @media (min-width: $desktop-breakpoint) {
     position: absolute;
     width: 228px;
     height: 34px;
     left: 199px;
     top: 180px;
-
-    font-family: Barlow Condensed;
     font-size: 28px;
-    font-weight: 400;
     line-height: 34px;
     letter-spacing: 4.724999904632568px;
     text-align: left;
   }
+
+  .mainTitle__number {
+    font-weight: bold;
+    color: darkgray;
+  }
 }
-.container__image {
-  position: absolute;
-  width: 327px;
-  height: 223px;
-  top: 20px;
-  left: 24px;
-}
-.linea__rectangular {
+
+.linea {
   position: absolute;
   width: 327px;
   height: 1px;
   top: 361px;
   left: 24px;
   color: #383b4b;
-  @media (min-width: 1115px) {
-    position: absolute;
+
+  @media (min-width: $desktop-breakpoint) {
     display: none;
   }
 }
-.personaje__principal {
+
+.personaje {
   position: absolute;
   width: 177.12px;
   height: 222px;
   top: 139px;
   left: 98.62px;
-  @media (min-width: 1115px) {
+
+  @media (min-width: $desktop-breakpoint) {
     position: absolute;
     width: 568.07px;
     height: 712px;
@@ -107,6 +91,104 @@ body {
     left: 734.93px;
   }
 }
+.informacionPersonaje {
+  position: absolute;
+  width: 327px;
+  height: 212px;
+  top: 450px;
+  left: 24px;
+
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    top: -440px;
+  }
+}
+
+.informacionPersonaje__cargo {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: Bellefair;
+  font-weight: 400;
+
+  width: 107px;
+  height: 18px;
+  left: 110px;
+  opacity: 49.51%;
+
+  font-size: 16px;
+  line-height: 18.34px;
+  text-align: center;
+  color: #ffffff;
+
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    width: 214px;
+    height: 37px;
+    top: 400px;
+    left: 165.5px;
+    opacity: 0.5px;
+
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+}
+
+.informacionPersonaje__nombre {
+  position: absolute;
+  font-family: Bellefair;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+
+  width: 327px;
+  height: 28px;
+  top: 26px;
+
+  font-size: 24px;
+  line-height: 27.5px;
+  text-align: center;
+
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    width: 488px;
+    height: 64px;
+    top: 452px;
+    left: 165.5px;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: left;
+  }
+}
+
+.informacionPersonaje__texto {
+  position: absolute;
+  font-family: Barlow;
+  font-weight: 400;
+  color: #d0d6f9;
+
+  width: 327px;
+  height: 100px;
+  top: 70px;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    width: 444px;
+    height: 128px;
+    top: 543px;
+    left: 165px;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: left;
+  }
+}
+
+// CARRUSEL
+
 .container__carrusel {
   position: absolute;
   width: 327px;
@@ -114,6 +196,7 @@ body {
   top: 394px;
   left: 24px;
 }
+
 .carrusel {
   position: absolute;
   width: 88px;
@@ -122,117 +205,14 @@ body {
   left: 130px;
   font-size: 16px;
   font-weight: 700;
-  @media (min-width: 1115px) {
+
+  @media (min-width: $desktop-breakpoint) {
     position: absolute;
     width: 132px;
     height: 15px;
     top: 481px;
     left: 167px;
     display: none;
-  }
-}
-.container__paragraph {
-  position: absolute;
-  width: 327px;
-  height: 170px;
-  top: 56px;
-  left: 14px;
-  @media (min-width: 1115px) {
-    position: absolute;
-    top: -440px;
-  }
-}
-.container__title {
-  position: absolute;
-  width: 327px;
-  height: 54px;
-}
-.title__Commander {
-  position: absolute;
-  width: 107px;
-  height: 18px;
-  left: 110px;
-  opacity: 49.51%;
-
-  font-family: Bellefair;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0px;
-  text-align: center;
-  color: #ffffff;
-  @media (min-width: 1115px) {
-    position: absolute;
-    width: 214px;
-    height: 37px;
-    top: 400px;
-    left: 165.5px;
-    opacity: 0.5px;
-
-    font-family: Bellefair;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 37px;
-    letter-spacing: 0px;
-    text-align: left;
-  }
-}
-.title__douglas {
-  position: absolute;
-  width: 327px;
-  height: 28px;
-  top: 26px;
-
-  font-family: Bellefair;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0px;
-  text-align: center;
-
-  color: #ffffff;
-  @media (min-width: 1115px) {
-    position: absolute;
-    width: 488px;
-    height: 64px;
-    top: 452px;
-    left: 165.5px;
-
-    font-family: Bellefair;
-    font-size: 56px;
-    font-weight: 400;
-    line-height: 64px;
-    letter-spacing: 0px;
-    text-align: left;
-  }
-}
-.paragraph__douglas {
-  position: absolute;
-  width: 327px;
-  height: 100px;
-  top: 70px;
-
-  font-family: Barlow;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0px;
-  text-align: center;
-
-  color: #d0d6f9;
-  @media (min-width: 1115px) {
-    position: absolute;
-    width: 444px;
-    height: 128px;
-    top: 543px;
-    left: 165px;
-
-    font-family: Barlow;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 0px;
-    text-align: left;
   }
 }
 
@@ -243,8 +223,8 @@ body {
   justify-content: center;
   width: 100px;
   height: 212px;
-  top: 407px;
-  left: 153px;
+  top: 400px;
+  left: 145px;
   &__item {
     display: flex;
     width: 88px;
