@@ -2,60 +2,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed&family=Bellefair&family=Courgette&family=Epilogue:wght@500;700&family=Josefin+Sans:wght@300&family=Quicksand&family=Space+Grotesk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow&family=Barlow+Condensed&family=Bellefair&family=Courgette&family=Epilogue:wght@500;700&family=Josefin+Sans:wght@300&family=Quicksand&family=Space+Grotesk&display=swap');
 
-// DESKTOP
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 'border-box';
+}
+
+$desktop-breakpoint: 1115px;
 
 #starIcon {
   position: absolute;
-  width: 48px;
-  height: 48px;
-  top: 64px;
-  left: 55px;
+
+  width: 40px;
+  height: 40px;
+  top: 24px;
+  left: 24px;
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 48px;
+    height: 48px;
+    top: 64px;
+    left: 55px;
+  }
+}
+
+#closeIcon {
+  display: none;
+  position: absolute;
+
+  width: 19.09px;
+  height: 19.09px;
+  top: 33.95px;
+  left: 329.45px;
+  z-index: 2;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    display: none !important;
+  }
+}
+
+#burguerIcon {
+  position: absolute;
+
+  width: 24px;
+  height: 21px;
+  top: 33px;
+  left: 327px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    display: none !important;
+  }
+}
+
+#burguerMenuBackground {
+  display: none;
+  position: absolute;
+  left: 121px;
+  z-index: 1;
+
+  @media (min-width: $desktop-breakpoint) {
+    display: none !important;
+  }
 }
 
 #lineDesktop {
-  position: absolute;
-  width: 473px;
-  height: 1px;
-  top: 88px;
-  left: 167px;
-  opacity: 0.25px;
-  color: #ffffff;
+  display: none;
+
+  @media (min-width: $desktop-breakpoint) {
+    display: block;
+    position: absolute;
+    width: 473px;
+    height: 1px;
+    top: 88px;
+    left: 167px;
+    opacity: 0.25px;
+    color: white;
+  }
 }
 
 #rectangleHeaderDesktop {
-  position: absolute;
-  width: 830px;
-  height: 96px;
-  top: 40px;
-  left: 610px;
+  display: none;
 
-  background: #ffffff0a;
+  @media (min-width: $desktop-breakpoint) {
+    display: block;
+    position: absolute;
+    width: 830px;
+    height: 96px;
+    top: 40px;
+    left: 610px;
+    background: #ffffff0a;
+  }
 }
+
 .navContainer {
   position: absolute;
+  z-index: 2;
 
-  top: 79px;
-  left: 733px;
+  top: 118px;
+  left: 153px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  display: none;
+
+  @media (min-width: $desktop-breakpoint) {
+    display: flex !important;
+    flex-direction: row;
+    top: 79px;
+    left: 733px;
+  }
 
   .navContainer__link {
-    // width: 96px;
-    // height: 19px;
-    padding-bottom: 35px;
-    margin-right: 50px;
-
+    color: white;
     font-family: Barlow Condensed;
+    text-transform: uppercase;
+    text-decoration: none;
+
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 2.7px;
     text-align: left;
 
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
+    padding-right: 95px;
+
+    @media (min-width: $desktop-breakpoint) {
+      padding-right: 0;
+      padding-bottom: 35px;
+      margin-right: 50px;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+      text-align: left;
+    }
   }
 
   .navContainer__link:hover {
-    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+
+    @media (min-width: $desktop-breakpoint) {
+      border-right: none;
+      border-bottom: 3px solid white;
+    }
   }
 }

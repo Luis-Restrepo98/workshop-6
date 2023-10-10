@@ -2,18 +2,13 @@ import React from 'react';
 import Navbar from './Navbar';
 import '../sass/home.scss';
 
-import homeDesktop from '../assets/img/home-desktop.png';
-import ovalDesktop from '../assets/img/oval-desktop.png';
-
 const Home = () => {
   return (
     <>
       <main className='mainContainer'>
-        <img src={homeDesktop} alt='home desktop' id='backgroundDesktop' />
         <Navbar />
-        <img src={ovalDesktop} alt='oval' id='ovalDesktop' />
-        <span id='explore'>EXPLORE</span>
-        <article className='desktopTextContainer'>
+        <div id='oval'></div>
+        <article id='TextContainer'>
           <p id='introduction'>SO, YOU WANT TO TRAVEL TO</p>
           <p id='mainTitle'>SPACE</p>
           <p id='paragraph'>
@@ -23,6 +18,7 @@ const Home = () => {
             world experience!
           </p>
         </article>
+        <span id='explore'>EXPLORE</span>
       </main>
     </>
   );
