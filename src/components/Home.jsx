@@ -1,23 +1,16 @@
 import React from 'react';
+import Navbar from './Navbar';
 import '../sass/home.scss';
+
 import homeDesktop from '../assets/img/home-desktop.png';
-import starIcon from '../assets/icons/star.svg';
 import ovalDesktop from '../assets/img/oval-desktop.png';
-import lineDesktop from '../assets/img/line-desktop.png';
-import rectangleHeaderDesktop from '../assets/img/rectangle-header-desktop.png';
 
 const Home = () => {
   return (
     <>
       <main className='mainContainer'>
         <img src={homeDesktop} alt='home desktop' id='backgroundDesktop' />
-        <img src={starIcon} alt='star' id='starIcon' />
-        <img src={lineDesktop} alt='line' id='lineDesktop' />
-        <img
-          src={rectangleHeaderDesktop}
-          alt='rectangle'
-          id='rectangleHeaderDesktop'
-        />
+        <Navbar />
         <img src={ovalDesktop} alt='oval' id='ovalDesktop' />
         <span id='explore'>EXPLORE</span>
         <article className='desktopTextContainer'>

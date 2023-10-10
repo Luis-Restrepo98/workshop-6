@@ -11,6 +11,10 @@
 }
 
 .mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   position: relative;
   width: 1440px;
   height: 900px;
@@ -18,14 +22,6 @@
   #backgroundDesktop {
     width: 100%;
     height: 100%;
-  }
-
-  #starIcon {
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    top: 64px;
-    left: 55px;
   }
 
   #ovalDesktop {
@@ -51,26 +47,6 @@
     text-align: left;
 
     color: #0b0d17;
-  }
-
-  #lineDesktop {
-    position: absolute;
-    width: 473px;
-    height: 1px;
-    top: 88px;
-    left: 167px;
-    opacity: 0.25px;
-    color: #ffffff;
-  }
-
-  #rectangleHeaderDesktop {
-    position: absolute;
-    width: 830px;
-    height: 96px;
-    top: 40px;
-    left: 610px;
-
-    background: #ffffff0a;
   }
 
   .desktopTextContainer {
