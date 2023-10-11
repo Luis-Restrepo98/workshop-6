@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Personaje from '../components/Personaje';
 
-import personaje1 from '../assets/img/personaje1-mobile.png';
-import personaje2 from '../assets/img/personaje2-mobile.png';
-import personaje3 from '../assets/img/personaje3-mobile.png';
-import personaje4 from '../assets/img/personaje4-mobile.png';
+import personaje1 from '../assets/img/personaje1-desktop.png';
+import personaje2 from '../assets/img/personaje2-desktop.png';
+import personaje3 from '../assets/img/personaje3-desktop.png';
+import personaje4 from '../assets/img/personaje4-desktop.png';
 
 import '../sass/carousel.scss';
 
@@ -12,7 +12,7 @@ let personajesData = [
   {
     id: 1,
     src: personaje1,
-    alt: 'Personaje 1',
+    alt: 'Per|sonaje 1',
     cargo: 'Commander',
     nombre: 'Douglas Hurley',
     texto:
