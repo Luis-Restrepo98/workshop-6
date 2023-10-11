@@ -12,7 +12,7 @@ $desktop-breakpoint: 1115px;
 
 .mainContainer {
   position: relative;
-  // margin: auto;
+  margin: auto;
   width: 375px;
   height: 710px;
   background-image: url('../assets/img/fondo-mobile-personajes.png');
@@ -91,12 +91,16 @@ $desktop-breakpoint: 1115px;
     left: 734.93px;
   }
 }
+
 .informacionPersonaje {
   position: absolute;
   width: 327px;
   height: 212px;
   top: 450px;
   left: 24px;
+
+  display: flex;
+  justify-content: center;
 
   @media (min-width: $desktop-breakpoint) {
     position: absolute;
@@ -110,14 +114,10 @@ $desktop-breakpoint: 1115px;
   font-family: Bellefair;
   font-weight: 400;
 
-  width: 107px;
-  height: 18px;
-  left: 110px;
   opacity: 49.51%;
 
   font-size: 16px;
   line-height: 18.34px;
-  text-align: center;
   color: #ffffff;
 
   @media (min-width: $desktop-breakpoint) {
