@@ -187,63 +187,29 @@ $desktop-breakpoint: 1115px;
   }
 }
 
-// CARRUSEL
+// CAROUSEL
 
-.container__carrusel {
-  position: absolute;
-  width: 327px;
-  height: 212px;
-  top: 394px;
-  left: 24px;
-}
-
-.carrusel {
-  position: absolute;
-  width: 88px;
-  height: 10px;
-  top: 20px;
-  left: 130px;
-  font-size: 16px;
-  font-weight: 700;
-
-  @media (min-width: $desktop-breakpoint) {
-    position: absolute;
-    width: 132px;
-    height: 15px;
-    top: 481px;
-    left: 167px;
-    display: none;
-  }
-}
-
-//carrusel personajes
-.carrusel__circular {
-  position: absolute;
+.indicators {
   display: flex;
-  justify-content: center;
-  width: 100px;
-  height: 212px;
-  top: 400px;
-  left: 145px;
-  &__item {
-    display: flex;
-    width: 88px;
-    height: 10px;
-    top: 20px;
-    left: 130px;
-    font-size: 16px;
-    font-weight: 700;
-    color: white;
-  }
-  &:hover {
-    cursor: pointer;
-    opacity: 20%;
-  }
-  @media (min-width: 1115px) {
-    position: absolute;
-    width: 132px;
-    height: 15px;
-    top: 810px;
-    left: 197px;
-  }
+  position: absolute;
+
+  height: 10px;
+  top: 394px;
+  left: 144px;
+}
+
+.indicator {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 5px #555;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.indicator-inactive {
+  background-color: grey;
 }

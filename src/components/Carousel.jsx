@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Personaje1 from '../components/Personaje1';
+import Personaje from '../components/Personaje';
 
 import personaje1 from '../assets/img/personaje1-mobile.png';
 import personaje2 from '../assets/img/personaje2-mobile.png';
@@ -48,26 +48,30 @@ let personajesData = [
 ];
 
 const Carousel = () => {
-  const [slide, setSlide] = useState(0);
+  const [indexPersonaje, setIndexPersonaje] = useState(0);
 
   return (
     <>
-      <Personaje1
-        {...personajesData[slide]}
-        key={slide}
-        className='personaje'
+      <Personaje
+        data={personajesData}
+        index={indexPersonaje}
+        setIndex={setIndexPersonaje}
+        key={indexPersonaje}
       />
-      <span className='indicators'>
+      {/* <Personaje1 {...personajesData[indexPersonaje]} key={indexPersonaje} /> */}
+      {/* <span className='indicators'>
         {personajesData.map((_, index) => (
           <button
             key={index}
-            onClick={() => setSlide(index)}
+            onClick={() => setIndexPersonaje(index)}
             className={
-              slide === index ? 'indicator' : 'indicator indicator-inactive'
+              indexPersonaje === index
+                ? 'indicator'
+                : 'indicator indicator-inactive'
             }
           ></button>
         ))}
-      </span>
+      </span> */}
     </>
   );
 };
