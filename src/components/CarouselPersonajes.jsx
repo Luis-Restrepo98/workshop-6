@@ -6,8 +6,6 @@ import personaje2 from '../assets/img/personaje2-desktop.png';
 import personaje3 from '../assets/img/personaje3-desktop.png';
 import personaje4 from '../assets/img/personaje4-desktop.png';
 
-import '../sass/carousel.scss';
-
 let personajesData = [
   {
     id: 1,
