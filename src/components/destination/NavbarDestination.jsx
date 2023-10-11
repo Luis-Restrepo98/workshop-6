@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Navegation } from './Navegation';
 import '../../sass/destination.scss';
-import Navbar from '../Navbar';
 
 const NavbarDestination = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -13,7 +12,6 @@ const NavbarDestination = () => {
   return (
     <>
       <div className='navbar'>
-        <Navbar />
         {Navegation[activeIndex]}
         <button className='Moon' onClick={() => goToComponent(0)}>
           MOON
