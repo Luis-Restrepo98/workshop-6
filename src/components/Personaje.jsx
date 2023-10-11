@@ -1,4 +1,6 @@
 import React from 'react';
+import Navbar from './Navbar';
+
 import linea from '../assets/icons/linea-personajes.png';
 
 import '../sass/personaje.scss';
@@ -10,7 +12,8 @@ const Personaje = props => {
 
   return (
     <>
-      <main className='mainContainer'>
+      <main className='mainContainerPersonajes'>
+        <Navbar />
         <h1 className='mainTitle'>
           <span className='mainTitle__number'>02</span> Meet your crew
         </h1>

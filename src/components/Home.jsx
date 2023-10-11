@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from './Navbar';
 import '../sass/home.scss';
+import Navbar from './Navbar';
 
 const Home = () => {
   return (
     <>
-      <main className='mainContainer'>
+      <main className='mainContainerHome'>
         <Navbar />
         <div id='oval'></div>
         <article id='TextContainer'>

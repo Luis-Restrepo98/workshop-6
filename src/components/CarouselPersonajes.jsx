@@ -47,7 +47,7 @@ let personajesData = [
   },
 ];
 
-const Carousel = () => {
+const CarouselPersonajes = () => {
   const [indexPersonaje, setIndexPersonaje] = useState(0);
 
   return (
@@ -76,4 +76,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default CarouselPersonajes;

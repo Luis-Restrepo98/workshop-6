@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import '../sass/navbar.scss';
 
 import starIcon from '../assets/icons/star.svg';
