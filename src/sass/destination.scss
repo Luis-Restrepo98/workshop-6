@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed&family=Courgette&family=Epilogue:wght@500;700&family=Josefin+Sans:wght@300&family=Quicksand&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed&family=Bellefair&family=Courgette&family=Epilogue:wght@500;700&family=Josefin+Sans:wght@300&family=Quicksand&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow&family=Barlow+Condensed&family=Bellefair&family=Courgette&family=Epilogue:wght@500;700&family=Josefin+Sans:wght@300&family=Quicksand&family=Space+Grotesk&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 'border-box';
+}
+
+$desktop-breakpoint: 1115px;
+
+.container {
+  position: relative;
+  width: 375px;
+  height: 850px;
+  background-image: url('../assets/img/Destnation-mobile.jpg');
+  background-size: cover; /* Esto asegura que la imagen cubra toda la pantalla */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  @media (min-width: $desktop-breakpoint) {
+    position: relative;
+    width: 1440px;
+    height: 900px;
+    background-image: url('../assets/img/Destination-fondo.png');
+    background-size: cover; /* Esto asegura que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  }
+}
+
+.container-moon {
+  position: absolute;
+  width: 221px;
+  height: 20px;
+  top: 08px;
+  left: 30px;
+  padding: 0px, 4px, 0px, 0px;
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    width: 400px;
+    height: 80px;
+    top: 100px;
+    left: 166.5px;
+    padding: 0px, 6px, 0px, 0px;
+  }
+}
+.num {
+  position: absolute;
+  top: 86px;
+  left: 50px;
+  font-family: Barlow Condensed;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 2.700000047683716px;
+  text-align: left;
+  color: #ffffff;
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 4.724999904632568px;
+    text-align: left;
+    color: #ffffff;
+  }
+}
+
+.moon {
+  position: absolute;
+  width: 221px;
+  height: 23px;
+  top: 88px;
+  left: 77.5px;
+  padding: 0px, 4px, 0px, 0px;
+  font-family: Barlow Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 2.700000047683716px;
+  text-align: left;
+  color: #ffffff;
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    width: 400px;
+    height: 45px;
+    left: 90px;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33.6px;
+    letter-spacing: 4.724999904632568px;
+    text-align: left;
+    color: #ffffff;
+  }
+}
+.img_moon {
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    width: 678px;
+    height: 678px;
+    top: 30px;
+    left: 0px;
+  }
+}
+.destination {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  top: 139px;
+  left: 103px;
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    width: 445px;
+    height: 445px;
+    top: 310px;
+    left: 200px;
+  }
+}
+
+.container_navegation {
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    width: 445px;
+    height: 472px;
+    top: 270px;
+    left: 850px;
+  }
+}
+
+.title_moon {
+  position: absolute;
+  width: 187px;
+  height: 64px;
+  top: 385px;
+  left: 94.5px;
+  font-family: Bellefair;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    width: 333px;
+    height: 100px;
+    top: 70px;
+    left: 15px;
+    font-family: Bellefair;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 110px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #ffffff;
+  }
+}
+.paragraph_planet {
+  position: absolute;
+  width: 327px;
+  height: 125px;
+  top: 448px;
+  left: 24px;
+  font-family: Barlow;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #d0d6f9;
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    width: 444px;
+    height: 128px;
+    top: 200px;
+    font-family: Barlow;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #d0d6f9;
+  }
+}
+.linea_recta {
+  position: absolute;
+  width: 327px;
+  height: 1px;
+  top: 605px;
+  left: 24px;
+  background: #383b4b;
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    width: 444px;
+    height: 1px;
+    top: 382px;
+    left: 1px;
+    background: #383b4b;
+  }
+}
+.container_distance {
+  position: absolute;
+  width: 216px;
+  height: 61px;
+  top: 638px;
+  left: 79.5px;
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    width: 143px;
+    height: 61px;
+    top: 411px;
+    left: 25px;
+  }
+}
+.distance {
+  position: absolute;
+  width: 216px;
+  height: 17px;
+  font-family: Barlow Condensed;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 2.362499952316284px;
+  text-align: center;
+  color: #d0d6f9;
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    font-family: Barlow Condensed;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 2.362499952316284px;
+    text-align: left;
+    color: #d0d6f9;
+  }
+}
+.km {
+  position: absolute;
+  width: 216px;
+  height: 30px;
+  top: 27px;
+  font-family: Bellefair;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    width: 144px;
+    height: 30px;
+    top: 28px;
+    font-family: Bellefair;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #ffffff;
+  }
+}
+.container_travel {
+  position: absolute;
+  width: 223px;
+  height: 61px;
+  top: 731px;
+  left: 76px;
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    width: 122px;
+    height: 61px;
+    top: 411px;
+    left: 260px;
+    padding: 0px, 4px, 0px, 0px;
+  }
+}
+.travel {
+  position: absolute;
+  width: 223px;
+  height: 17px;
+  font-family: Barlow Condensed;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 2.362499952316284px;
+  text-align: center;
+  color: #d0d6f9;
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    width: 118px;
+    height: 17px;
+    font-family: Barlow Condensed;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 2.362499952316284px;
+    text-align: left;
+    color: #d0d6f9;
+  }
+}
+.days {
+  position: absolute;
+  width: 223px;
+  height: 32px;
+  top: 29px;
+  font-family: Bellefair;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+  @media (min-width: $desktop-breakpoint) {
+    position: absolute;
+    top: 29px;
+    font-family: Bellefair;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #ffffff;
+  }
+}
+.navbar {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+}
+.Moon {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 85px;
+  margin-top: 340px;
+  font-family: Barlow Condensed;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 2.362499952316284px;
+  text-align: left;
+  color: white;
+  @media (min-width: $desktop-breakpoint) {
+    left: 880px;
+    margin-top: 300px;
+  }
+}
+.Mars {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 135px;
+  margin-top: 340px;
+  font-family: Barlow Condensed;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 2.362499952316284px;
+  text-align: left;
+  color: white;
+  @media (min-width: $desktop-breakpoint) {
+    left: 950px;
+    margin-top: 300px;
+  }
+}
+.Europa {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 185px;
+  margin-top: 340px;
+  font-family: Barlow Condensed;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 2.362499952316284px;
+  text-align: left;
+  color: white;
+  @media (min-width: $desktop-breakpoint) {
+    left: 1020px;
+    margin-top: 300px;
+  }
+}
+.Titan {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 245px;
+  margin-top: 340px;
+  font-family: Barlow Condensed;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 2.362499952316284px;
+  text-align: left;
+  color: white;
+  @media (min-width: $desktop-breakpoint) {
+    left: 1090px;
+    margin-top: 300px;
+  }
+}
