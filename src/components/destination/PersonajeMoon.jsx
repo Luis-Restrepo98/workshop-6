@@ -1,5 +1,7 @@
 import '../../sass/destination.scss';
 
+import Navbar from '../Navbar';
+
 import destinationMoon from '../../assets/img/moon.png';
 import lineaRectangular from '../../assets/icons/Rectangle.png';
 
@@ -7,6 +9,7 @@ const DestinationMoon = () => {
   return (
     <>
       <main className='container'>
+        <Navbar />
         <div className='container-moon'>
           <p className='num'>01 </p>
           <h1 className='moon'>PICK YOUR DESTINATION</h1>
