@@ -4,6 +4,7 @@ import Home from '../components/Home';
 import Layout from '../components/Layout';
 import CarouselPersonajes from '../components/CarouselPersonajes';
 import NavbarDestination from '../components/destination/NavbarDestination';
+import { Vehicles } from '../components/vehicle';
 
 const Router = () => {
   return (
@@ -13,6 +14,7 @@ const Router = () => {
           <Route index element={<Home />} />
           <Route path='crew' element={<CarouselPersonajes />} />
           <Route path='destination' element={<NavbarDestination />} />
+          <Route path='technology' element={<Vehicles />} />
         </Route>
       </Routes>
     </BrowserRouter>

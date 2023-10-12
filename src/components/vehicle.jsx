@@ -3,6 +3,7 @@ import '../sass/vehicles.scss';
 import launchVehicle from '../assets/img/Space-1.png';
 import spaceport from '../assets/img/Space-2.png';
 import spacecapsule from '../assets/img/Sapce-3.png';
+import Navbar from './Navbar';
 
 export const Vehicles = () => {
   const [vehicle, setVehicle] = useState('LAUNCH');
@@ -22,11 +23,10 @@ export const Vehicles = () => {
   return (
     <div>
       <div className='vehiclesBody'>
-        <div className='vehiclesHeader'>Header</div>
+        <Navbar />
+        <div className='vehiclesHeader'></div>
         <div className='vehiclesTitle'>
-          <span className='vehiclesTitleText'>
-            <span className='num'>03</span> SPACE LAUNCH 101
-          </span>
+          <span className='vehiclesTitleText'>SPACE LAUNCH 101</span>
         </div>
 
         <div className='vehiclesContanerInfo'>
